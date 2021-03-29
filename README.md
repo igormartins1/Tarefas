@@ -1,8 +1,4 @@
-h2 align="center">
-	Sistema gerenciador de tarefas.
-	<br>
-  
-  </h2>
+
 
 Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Cataguases com objetivo de construir um Sistema de Gereciamento de Tarefas na Aula de Desenvolvimento para Aplicativo Desktop.
 
