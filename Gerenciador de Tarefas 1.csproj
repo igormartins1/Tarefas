@@ -46,17 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FCadStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCadStatus.Designer.cs">
+      <DependentUpon>FCadStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCadTarefa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCadTarefa.Designer.cs">
+      <DependentUpon>FCadTarefa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGridConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FGridConsulta.Designer.cs">
       <DependentUpon>FGridConsulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="FGridConsultaResp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridConsultaResp.Designer.cs">
+      <DependentUpon>FGridConsultaResp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGridConsultaStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGridConsultaStatus.Designer.cs">
+      <DependentUpon>FGridConsultaStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="FMenuAbertura.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FMenuAbertura.Designer.cs">
       <DependentUpon>FMenuAbertura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCadRespons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCadRespons.Designer.cs">
+      <DependentUpon>FCadRespons.cs</DependentUpon>
     </Compile>
     <Compile Include="FSobre.cs">
       <SubType>Form</SubType>
@@ -71,8 +101,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>tarefasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="tarefasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tarefasDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FCadRespons.resx">
+      <DependentUpon>FCadRespons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCadStatus.resx">
+      <DependentUpon>FCadStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCadTarefa.resx">
+      <DependentUpon>FCadTarefa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FGridConsulta.resx">
       <DependentUpon>FGridConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridConsultaResp.resx">
+      <DependentUpon>FGridConsultaResp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGridConsultaStatus.resx">
+      <DependentUpon>FGridConsultaStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMenuAbertura.resx">
       <DependentUpon>FMenuAbertura.cs</DependentUpon>
@@ -108,6 +158,17 @@
     </None>
     <None Include="tarefasDataSet.xss">
       <DependentUpon>tarefasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tarefasDataSet1.xsc">
+      <DependentUpon>tarefasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tarefasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tarefasDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tarefasDataSet1.xss">
+      <DependentUpon>tarefasDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

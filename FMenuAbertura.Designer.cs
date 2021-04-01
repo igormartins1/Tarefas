@@ -95,6 +95,7 @@
             this.historiaDoAplicativoToolStripMenuItem.Name = "historiaDoAplicativoToolStripMenuItem";
             this.historiaDoAplicativoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.historiaDoAplicativoToolStripMenuItem.Text = "Historia do Aplicativo";
+            this.historiaDoAplicativoToolStripMenuItem.Visible = false;
             this.historiaDoAplicativoToolStripMenuItem.Click += new System.EventHandler(this.historiaDoAplicativoToolStripMenuItem_Click);
             // 
             // FMenuAbertura
