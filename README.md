@@ -26,3 +26,12 @@ Este trata-se de um gerenciador de tarefas com quatro tópico (Fazer, Fazendo, F
 	 <p align= "justify">
 Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcionalidade offline. Com relação ao CRUD não deverá apagar o usuário e nem o status.
 - </p>
+
+
+## Tecnologias usadas 🛠
+- Back-end
+	- MySQL
+	
+- Front-end
+	- C#
+	
