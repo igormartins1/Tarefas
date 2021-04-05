@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label descricaoLabel;
+            System.Windows.Forms.Label LBDescricao;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCadStatus));
-            this.LBCadStatus = new System.Windows.Forms.Label();
+            this.LTituloStatus = new System.Windows.Forms.Label();
             this.tarefasDataSet1 = new Gerenciador_de_Tarefas_1.tarefasDataSet1();
             this.statusBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusTableAdapter = new Gerenciador_de_Tarefas_1.tarefasDataSet1TableAdapters.StatusTableAdapter();
@@ -53,9 +53,9 @@
             this.statusDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTExibir = new System.Windows.Forms.Button();
+            this.BTAdicionar = new System.Windows.Forms.Button();
             this.BTNovo = new System.Windows.Forms.Button();
-            descricaoLabel = new System.Windows.Forms.Label();
+            LBDescricao = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingNavigator)).BeginInit();
@@ -63,29 +63,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.statusDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // descricaoLabel
+            // LBDescricao
             // 
-            descricaoLabel.AutoSize = true;
-            descricaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descricaoLabel.Location = new System.Drawing.Point(84, 128);
-            descricaoLabel.Name = "descricaoLabel";
-            descricaoLabel.Size = new System.Drawing.Size(105, 25);
-            descricaoLabel.TabIndex = 1;
-            descricaoLabel.Text = "Descrição:";
-            descricaoLabel.Click += new System.EventHandler(this.descricaoLabel_Click);
+            LBDescricao.AutoSize = true;
+            LBDescricao.BackColor = System.Drawing.Color.Transparent;
+            LBDescricao.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            LBDescricao.ForeColor = System.Drawing.Color.Black;
+            LBDescricao.Location = new System.Drawing.Point(22, 157);
+            LBDescricao.Name = "LBDescricao";
+            LBDescricao.Size = new System.Drawing.Size(141, 24);
+            LBDescricao.TabIndex = 1;
+            LBDescricao.Text = "DESCRIÇÃO:";
+            LBDescricao.Click += new System.EventHandler(this.descricaoLabel_Click);
             // 
-            // LBCadStatus
+            // LTituloStatus
             // 
-            this.LBCadStatus.AllowDrop = true;
-            this.LBCadStatus.AutoSize = true;
-            this.LBCadStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBCadStatus.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LBCadStatus.Location = new System.Drawing.Point(159, 62);
-            this.LBCadStatus.Name = "LBCadStatus";
-            this.LBCadStatus.Size = new System.Drawing.Size(206, 30);
-            this.LBCadStatus.TabIndex = 7;
-            this.LBCadStatus.Text = "Informe  o Status";
-            this.LBCadStatus.Click += new System.EventHandler(this.LBCadRespons_Click);
+            this.LTituloStatus.AllowDrop = true;
+            this.LTituloStatus.AutoSize = true;
+            this.LTituloStatus.BackColor = System.Drawing.Color.Transparent;
+            this.LTituloStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LTituloStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.LTituloStatus.Location = new System.Drawing.Point(137, 91);
+            this.LTituloStatus.Name = "LTituloStatus";
+            this.LTituloStatus.Size = new System.Drawing.Size(302, 33);
+            this.LTituloStatus.TabIndex = 7;
+            this.LTituloStatus.Text = "INFORME O STATUS";
+            this.LTituloStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LTituloStatus.Click += new System.EventHandler(this.LBCadRespons_Click);
             // 
             // tarefasDataSet1
             // 
@@ -236,9 +240,10 @@
             // descricaoTextBox
             // 
             this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statusBindingSource, "Descricao", true));
-            this.descricaoTextBox.Location = new System.Drawing.Point(195, 134);
+            this.descricaoTextBox.Location = new System.Drawing.Point(160, 155);
+            this.descricaoTextBox.Multiline = true;
             this.descricaoTextBox.Name = "descricaoTextBox";
-            this.descricaoTextBox.Size = new System.Drawing.Size(240, 20);
+            this.descricaoTextBox.Size = new System.Drawing.Size(262, 26);
             this.descricaoTextBox.TabIndex = 9;
             // 
             // statusDataGridView
@@ -246,7 +251,7 @@
             this.statusDataGridView.AllowUserToAddRows = false;
             this.statusDataGridView.AllowUserToDeleteRows = false;
             this.statusDataGridView.AutoGenerateColumns = false;
-            this.statusDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.statusDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.statusDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.statusDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -255,7 +260,7 @@
             this.statusDataGridView.Location = new System.Drawing.Point(560, 28);
             this.statusDataGridView.Name = "statusDataGridView";
             this.statusDataGridView.ReadOnly = true;
-            this.statusDataGridView.Size = new System.Drawing.Size(244, 274);
+            this.statusDataGridView.Size = new System.Drawing.Size(256, 274);
             this.statusDataGridView.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1
@@ -272,23 +277,23 @@
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // BTExibir
+            // BTAdicionar
             // 
-            this.BTExibir.Location = new System.Drawing.Point(394, 204);
-            this.BTExibir.Name = "BTExibir";
-            this.BTExibir.Size = new System.Drawing.Size(75, 23);
-            this.BTExibir.TabIndex = 11;
-            this.BTExibir.Text = "Exibir";
-            this.BTExibir.UseVisualStyleBackColor = true;
-            this.BTExibir.Click += new System.EventHandler(this.BTExibir_Click);
+            this.BTAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("BTAdicionar.Image")));
+            this.BTAdicionar.Location = new System.Drawing.Point(498, 28);
+            this.BTAdicionar.Name = "BTAdicionar";
+            this.BTAdicionar.Size = new System.Drawing.Size(43, 50);
+            this.BTAdicionar.TabIndex = 11;
+            this.BTAdicionar.UseVisualStyleBackColor = true;
+            this.BTAdicionar.Click += new System.EventHandler(this.BTExibir_Click);
             // 
             // BTNovo
             // 
-            this.BTNovo.Location = new System.Drawing.Point(195, 204);
+            this.BTNovo.Image = ((System.Drawing.Image)(resources.GetObject("BTNovo.Image")));
+            this.BTNovo.Location = new System.Drawing.Point(454, 28);
             this.BTNovo.Name = "BTNovo";
-            this.BTNovo.Size = new System.Drawing.Size(75, 23);
+            this.BTNovo.Size = new System.Drawing.Size(48, 50);
             this.BTNovo.TabIndex = 12;
-            this.BTNovo.Text = "Novo";
             this.BTNovo.UseVisualStyleBackColor = true;
             this.BTNovo.Click += new System.EventHandler(this.BTNovo_Click);
             // 
@@ -297,14 +302,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(816, 301);
             this.Controls.Add(this.BTNovo);
-            this.Controls.Add(this.BTExibir);
+            this.Controls.Add(this.BTAdicionar);
             this.Controls.Add(this.statusDataGridView);
             this.Controls.Add(this.descricaoTextBox);
             this.Controls.Add(this.statusBindingNavigator);
-            this.Controls.Add(this.LBCadStatus);
-            this.Controls.Add(descricaoLabel);
+            this.Controls.Add(this.LTituloStatus);
+            this.Controls.Add(LBDescricao);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -324,7 +331,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label LBCadStatus;
+        private System.Windows.Forms.Label LTituloStatus;
         private tarefasDataSet1 tarefasDataSet1;
         private System.Windows.Forms.BindingSource statusBindingSource;
         private tarefasDataSet1TableAdapters.StatusTableAdapter statusTableAdapter;
@@ -346,7 +353,7 @@
         private System.Windows.Forms.DataGridView statusDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.Button BTExibir;
+        private System.Windows.Forms.Button BTAdicionar;
         private System.Windows.Forms.Button BTNovo;
     }
 }

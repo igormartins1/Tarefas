@@ -53,8 +53,8 @@
             this.responsavelDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTSalvar = new System.Windows.Forms.Button();
-            this.BTNovo = new System.Windows.Forms.Button();
+            this.BTNovoResp = new System.Windows.Forms.Button();
+            this.BTAdicionar = new System.Windows.Forms.Button();
             descricaoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingSource)).BeginInit();
@@ -66,10 +66,11 @@
             // descricaoLabel
             // 
             descricaoLabel.AutoSize = true;
-            descricaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descricaoLabel.Location = new System.Drawing.Point(102, 150);
+            descricaoLabel.BackColor = System.Drawing.Color.Transparent;
+            descricaoLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descricaoLabel.Location = new System.Drawing.Point(12, 175);
             descricaoLabel.Name = "descricaoLabel";
-            descricaoLabel.Size = new System.Drawing.Size(70, 25);
+            descricaoLabel.Size = new System.Drawing.Size(70, 24);
             descricaoLabel.TabIndex = 5;
             descricaoLabel.Text = "Nome:";
             // 
@@ -77,13 +78,14 @@
             // 
             this.LBCadRespons.AllowDrop = true;
             this.LBCadRespons.AutoSize = true;
-            this.LBCadRespons.Font = new System.Drawing.Font("Microsoft Sans Serif", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBCadRespons.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LBCadRespons.Location = new System.Drawing.Point(147, 93);
+            this.LBCadRespons.BackColor = System.Drawing.Color.Transparent;
+            this.LBCadRespons.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBCadRespons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.LBCadRespons.Location = new System.Drawing.Point(122, 104);
             this.LBCadRespons.Name = "LBCadRespons";
-            this.LBCadRespons.Size = new System.Drawing.Size(282, 30);
+            this.LBCadRespons.Size = new System.Drawing.Size(402, 33);
             this.LBCadRespons.TabIndex = 6;
-            this.LBCadRespons.Text = "Informe  o Responsável";
+            this.LBCadRespons.Text = "INFORME O RESPONSÁVEL";
             // 
             // tarefasDataSet1
             // 
@@ -234,9 +236,10 @@
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.responsavelBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(178, 155);
+            this.nomeTextBox.Location = new System.Drawing.Point(148, 175);
+            this.nomeTextBox.Multiline = true;
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(264, 20);
+            this.nomeTextBox.Size = new System.Drawing.Size(350, 20);
             this.nomeTextBox.TabIndex = 8;
             // 
             // responsavelDataGridView
@@ -244,16 +247,16 @@
             this.responsavelDataGridView.AllowUserToAddRows = false;
             this.responsavelDataGridView.AllowUserToDeleteRows = false;
             this.responsavelDataGridView.AutoGenerateColumns = false;
-            this.responsavelDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.responsavelDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.responsavelDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.responsavelDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.responsavelDataGridView.DataSource = this.responsavelBindingSource;
-            this.responsavelDataGridView.Location = new System.Drawing.Point(529, 28);
+            this.responsavelDataGridView.Location = new System.Drawing.Point(614, 28);
             this.responsavelDataGridView.Name = "responsavelDataGridView";
             this.responsavelDataGridView.ReadOnly = true;
-            this.responsavelDataGridView.Size = new System.Drawing.Size(271, 425);
+            this.responsavelDataGridView.Size = new System.Drawing.Size(186, 425);
             this.responsavelDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -271,34 +274,35 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // BTSalvar
+            // BTNovoResp
             // 
-            this.BTSalvar.Location = new System.Drawing.Point(326, 207);
-            this.BTSalvar.Name = "BTSalvar";
-            this.BTSalvar.Size = new System.Drawing.Size(75, 23);
-            this.BTSalvar.TabIndex = 10;
-            this.BTSalvar.Text = "Exibir";
-            this.BTSalvar.UseVisualStyleBackColor = true;
-            this.BTSalvar.Click += new System.EventHandler(this.BTSalvar_Click);
+            this.BTNovoResp.Image = ((System.Drawing.Image)(resources.GetObject("BTNovoResp.Image")));
+            this.BTNovoResp.Location = new System.Drawing.Point(409, 28);
+            this.BTNovoResp.Name = "BTNovoResp";
+            this.BTNovoResp.Size = new System.Drawing.Size(48, 50);
+            this.BTNovoResp.TabIndex = 13;
+            this.BTNovoResp.UseVisualStyleBackColor = true;
+            this.BTNovoResp.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BTNovo
+            // BTAdicionar
             // 
-            this.BTNovo.Location = new System.Drawing.Point(143, 207);
-            this.BTNovo.Name = "BTNovo";
-            this.BTNovo.Size = new System.Drawing.Size(76, 23);
-            this.BTNovo.TabIndex = 11;
-            this.BTNovo.Text = "Novo";
-            this.BTNovo.UseVisualStyleBackColor = true;
-            this.BTNovo.Click += new System.EventHandler(this.BTNovo_Click);
+            this.BTAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("BTAdicionar.Image")));
+            this.BTAdicionar.Location = new System.Drawing.Point(463, 28);
+            this.BTAdicionar.Name = "BTAdicionar";
+            this.BTAdicionar.Size = new System.Drawing.Size(43, 50);
+            this.BTAdicionar.TabIndex = 14;
+            this.BTAdicionar.UseVisualStyleBackColor = true;
+            this.BTAdicionar.Click += new System.EventHandler(this.BTAdicionar_Click);
             // 
             // FCadRespons
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BTNovo);
-            this.Controls.Add(this.BTSalvar);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(800, 353);
+            this.Controls.Add(this.BTAdicionar);
+            this.Controls.Add(this.BTNovoResp);
             this.Controls.Add(this.responsavelDataGridView);
             this.Controls.Add(this.nomeTextBox);
             this.Controls.Add(this.responsavelBindingNavigator);
@@ -345,7 +349,7 @@
         private System.Windows.Forms.DataGridView responsavelDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.Button BTSalvar;
-        private System.Windows.Forms.Button BTNovo;
+        private System.Windows.Forms.Button BTNovoResp;
+        private System.Windows.Forms.Button BTAdicionar;
     }
 }

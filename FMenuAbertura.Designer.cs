@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMenuAbertura));
             this.LBBemVindo = new System.Windows.Forms.Label();
             this.LBtexto2 = new System.Windows.Forms.Label();
             this.BTEntrar = new System.Windows.Forms.Button();
@@ -40,11 +41,12 @@
             // LBBemVindo
             // 
             this.LBBemVindo.AutoSize = true;
-            this.LBBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBBemVindo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LBBemVindo.Location = new System.Drawing.Point(299, 87);
+            this.LBBemVindo.BackColor = System.Drawing.Color.Transparent;
+            this.LBBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBBemVindo.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.LBBemVindo.Location = new System.Drawing.Point(321, 81);
             this.LBBemVindo.Name = "LBBemVindo";
-            this.LBBemVindo.Size = new System.Drawing.Size(209, 44);
+            this.LBBemVindo.Size = new System.Drawing.Size(195, 39);
             this.LBBemVindo.TabIndex = 0;
             this.LBBemVindo.Text = "Bem-Vindo";
             this.LBBemVindo.Click += new System.EventHandler(this.LBBemVindo_Click);
@@ -52,24 +54,27 @@
             // LBtexto2
             // 
             this.LBtexto2.AutoSize = true;
-            this.LBtexto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBtexto2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LBtexto2.Location = new System.Drawing.Point(137, 146);
+            this.LBtexto2.BackColor = System.Drawing.Color.Transparent;
+            this.LBtexto2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBtexto2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.LBtexto2.Location = new System.Drawing.Point(176, 146);
             this.LBtexto2.Name = "LBtexto2";
-            this.LBtexto2.Size = new System.Drawing.Size(533, 44);
+            this.LBtexto2.Size = new System.Drawing.Size(506, 39);
             this.LBtexto2.TabIndex = 1;
             this.LBtexto2.Text = "ao seu gerenciador de tarefas ";
             this.LBtexto2.Click += new System.EventHandler(this.LBtexto2_Click);
             // 
             // BTEntrar
             // 
+            this.BTEntrar.BackColor = System.Drawing.Color.OliveDrab;
             this.BTEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTEntrar.ForeColor = System.Drawing.Color.White;
             this.BTEntrar.Location = new System.Drawing.Point(331, 239);
             this.BTEntrar.Name = "BTEntrar";
-            this.BTEntrar.Size = new System.Drawing.Size(145, 39);
+            this.BTEntrar.Size = new System.Drawing.Size(167, 39);
             this.BTEntrar.TabIndex = 2;
-            this.BTEntrar.Text = "ENTRAR";
-            this.BTEntrar.UseVisualStyleBackColor = true;
+            this.BTEntrar.Text = "Clique Aqui";
+            this.BTEntrar.UseVisualStyleBackColor = false;
             this.BTEntrar.Click += new System.EventHandler(this.BTEntrar_Click);
             // 
             // menuStrip1
@@ -78,9 +83,9 @@
             this.sobreToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(806, 24);
             this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Text = "MenuPrincipal";
             // 
             // sobreToolStripMenuItem
             // 
@@ -95,20 +100,19 @@
             this.historiaDoAplicativoToolStripMenuItem.Name = "historiaDoAplicativoToolStripMenuItem";
             this.historiaDoAplicativoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.historiaDoAplicativoToolStripMenuItem.Text = "Historia do Aplicativo";
-            this.historiaDoAplicativoToolStripMenuItem.Visible = false;
-            this.historiaDoAplicativoToolStripMenuItem.Click += new System.EventHandler(this.historiaDoAplicativoToolStripMenuItem_Click);
+            this.historiaDoAplicativoToolStripMenuItem.Click += new System.EventHandler(this.historiaDoAplicativoToolStripMenuItem_Click_1);
             // 
             // FMenuAbertura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(806, 296);
             this.Controls.Add(this.BTEntrar);
             this.Controls.Add(this.LBtexto2);
             this.Controls.Add(this.LBBemVindo);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FMenuAbertura";

@@ -129,5 +129,11 @@ namespace Gerenciador_de_Tarefas_1
             this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
 
         }
+
+        private void historiaDoAplicativoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FSobre sobre = new FSobre();
+            sobre.ShowDialog();
+        }
     }
 }

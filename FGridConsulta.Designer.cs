@@ -236,7 +236,9 @@
             // 
             this.tarefaDataGridView.AllowUserToAddRows = false;
             this.tarefaDataGridView.AllowUserToDeleteRows = false;
+            this.tarefaDataGridView.AllowUserToOrderColumns = true;
             this.tarefaDataGridView.AutoGenerateColumns = false;
+            this.tarefaDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.tarefaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tarefaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -245,6 +247,7 @@
             this.dataGridViewTextBoxColumn4});
             this.tarefaDataGridView.DataSource = this.tarefaBindingSource;
             this.tarefaDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tarefaDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tarefaDataGridView.Location = new System.Drawing.Point(0, 49);
             this.tarefaDataGridView.Name = "tarefaDataGridView";
             this.tarefaDataGridView.ReadOnly = true;
@@ -381,16 +384,19 @@
             this.historiaDoAplicativoToolStripMenuItem.Name = "historiaDoAplicativoToolStripMenuItem";
             this.historiaDoAplicativoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.historiaDoAplicativoToolStripMenuItem.Text = "Historia do Aplicativo";
+            this.historiaDoAplicativoToolStripMenuItem.Click += new System.EventHandler(this.historiaDoAplicativoToolStripMenuItem_Click);
             // 
             // BTDelete
             // 
+            this.BTDelete.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BTDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTDelete.BackgroundImage")));
             this.BTDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BTDelete.Location = new System.Drawing.Point(548, 105);
+            this.BTDelete.Location = new System.Drawing.Point(725, 52);
             this.BTDelete.Name = "BTDelete";
-            this.BTDelete.Size = new System.Drawing.Size(114, 37);
+            this.BTDelete.Size = new System.Drawing.Size(72, 75);
             this.BTDelete.TabIndex = 3;
-            this.BTDelete.Text = "Deletar";
-            this.BTDelete.UseVisualStyleBackColor = true;
+            this.BTDelete.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BTDelete.UseVisualStyleBackColor = false;
             this.BTDelete.Click += new System.EventHandler(this.BTDelete_Click);
             // 
             // FGridConsulta

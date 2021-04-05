@@ -37,24 +37,34 @@ namespace Gerenciador_de_Tarefas_1
 
         private void BTSalvar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                this.responsavelBindingSource.EndEdit();
-                this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
-                
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+          
 
         }
 
         private void BTNovo_Click(object sender, EventArgs e)
         {
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             this.responsavelTableAdapter.Fill(this.tarefasDataSet1.responsavel);
             this.responsavelBindingSource.AddNew();
+        }
 
+        private void BTAdicionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.responsavelBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
+
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
         }
     }
 }

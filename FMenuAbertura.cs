@@ -44,5 +44,16 @@ namespace Gerenciador_de_Tarefas_1
             FSobre fSobre = new FSobre();
             fSobre.ShowDialog();
         }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void historiaDoAplicativoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            FSobre fSobre1 = new FSobre();
+            fSobre1.ShowDialog();
+        }
     }
 }

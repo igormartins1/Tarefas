@@ -74,7 +74,7 @@
             // 
             LBNomeTarefa.AutoSize = true;
             LBNomeTarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LBNomeTarefa.Location = new System.Drawing.Point(202, 51);
+            LBNomeTarefa.Location = new System.Drawing.Point(184, 110);
             LBNomeTarefa.Name = "LBNomeTarefa";
             LBNomeTarefa.Size = new System.Drawing.Size(66, 20);
             LBNomeTarefa.TabIndex = 9;
@@ -84,7 +84,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(202, 128);
+            label1.Location = new System.Drawing.Point(58, 199);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(62, 20);
             label1.TabIndex = 10;
@@ -94,7 +94,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label2.Location = new System.Drawing.Point(202, 249);
+            label2.Location = new System.Drawing.Point(341, 199);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(112, 20);
             label2.TabIndex = 11;
@@ -250,9 +250,10 @@
             // descricaoTextBox
             // 
             this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tarefaBindingSource, "descricao", true));
-            this.descricaoTextBox.Location = new System.Drawing.Point(336, 53);
+            this.descricaoTextBox.Location = new System.Drawing.Point(284, 110);
+            this.descricaoTextBox.Multiline = true;
             this.descricaoTextBox.Name = "descricaoTextBox";
-            this.descricaoTextBox.Size = new System.Drawing.Size(160, 20);
+            this.descricaoTextBox.Size = new System.Drawing.Size(249, 28);
             this.descricaoTextBox.TabIndex = 13;
             // 
             // fKStatusListBox
@@ -261,7 +262,7 @@
             this.fKStatusListBox.DataSource = this.statusBindingSource;
             this.fKStatusListBox.DisplayMember = "Descricao";
             this.fKStatusListBox.FormattingEnabled = true;
-            this.fKStatusListBox.Location = new System.Drawing.Point(336, 95);
+            this.fKStatusListBox.Location = new System.Drawing.Point(152, 166);
             this.fKStatusListBox.Name = "fKStatusListBox";
             this.fKStatusListBox.Size = new System.Drawing.Size(160, 82);
             this.fKStatusListBox.TabIndex = 15;
@@ -278,9 +279,9 @@
             this.fKResponsavelListBox.DataSource = this.responsavelBindingSource;
             this.fKResponsavelListBox.DisplayMember = "Nome";
             this.fKResponsavelListBox.FormattingEnabled = true;
-            this.fKResponsavelListBox.Location = new System.Drawing.Point(336, 205);
+            this.fKResponsavelListBox.Location = new System.Drawing.Point(473, 166);
             this.fKResponsavelListBox.Name = "fKResponsavelListBox";
-            this.fKResponsavelListBox.Size = new System.Drawing.Size(160, 95);
+            this.fKResponsavelListBox.Size = new System.Drawing.Size(178, 82);
             this.fKResponsavelListBox.TabIndex = 17;
             this.fKResponsavelListBox.ValueMember = "IdResponsavel";
             // 
@@ -300,7 +301,7 @@
             // BTSalvar
             // 
             this.BTSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTSalvar.Location = new System.Drawing.Point(665, 249);
+            this.BTSalvar.Location = new System.Drawing.Point(588, 41);
             this.BTSalvar.Name = "BTSalvar";
             this.BTSalvar.Size = new System.Drawing.Size(85, 32);
             this.BTSalvar.TabIndex = 18;
@@ -310,7 +311,7 @@
             // 
             // BTNovo
             // 
-            this.BTNovo.Location = new System.Drawing.Point(665, 125);
+            this.BTNovo.Location = new System.Drawing.Point(691, 48);
             this.BTNovo.Name = "BTNovo";
             this.BTNovo.Size = new System.Drawing.Size(85, 23);
             this.BTNovo.TabIndex = 19;
@@ -323,7 +324,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(800, 503);
+            this.ClientSize = new System.Drawing.Size(800, 287);
             this.Controls.Add(this.BTNovo);
             this.Controls.Add(this.BTSalvar);
             this.Controls.Add(this.descricaoTextBox);

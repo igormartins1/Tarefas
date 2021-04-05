@@ -219,7 +219,7 @@
             this.statusDataGridView.AllowUserToAddRows = false;
             this.statusDataGridView.AllowUserToDeleteRows = false;
             this.statusDataGridView.AutoGenerateColumns = false;
-            this.statusDataGridView.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.statusDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.statusDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.statusDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -251,6 +251,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusDataGridView);
             this.Controls.Add(this.statusBindingNavigator);
