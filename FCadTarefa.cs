@@ -60,9 +60,32 @@ namespace Gerenciador_de_Tarefas_1
 
         private void BTNovo_Click(object sender, EventArgs e)
         {
+            
+
+        }
+
+        private void BTNovoResp_Click(object sender, EventArgs e)
+        {
             this.tarefaTableAdapter.Fill(this.tarefasDataSet1.Tarefa);
             this.tarefaBindingSource.AddNew();
 
+            
+        }
+
+        private void BTAdicionar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.tarefaBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
+                this.Close();
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+            MessageBox.Show(this, "Tarefa Cadastrada Com Sucesso", "Tarefa", MessageBoxButtons.OK);
         }
     }
 }

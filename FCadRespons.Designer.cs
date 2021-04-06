@@ -36,19 +36,6 @@
             this.responsavelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.responsavelTableAdapter = new Gerenciador_de_Tarefas_1.tarefasDataSet1TableAdapters.responsavelTableAdapter();
             this.tableAdapterManager = new Gerenciador_de_Tarefas_1.tarefasDataSet1TableAdapters.TableAdapterManager();
-            this.responsavelBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.responsavelBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nomeTextBox = new System.Windows.Forms.TextBox();
             this.responsavelDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,8 +45,6 @@
             descricaoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingNavigator)).BeginInit();
-            this.responsavelBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,11 +53,12 @@
             descricaoLabel.AutoSize = true;
             descricaoLabel.BackColor = System.Drawing.Color.Transparent;
             descricaoLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descricaoLabel.Location = new System.Drawing.Point(12, 175);
+            descricaoLabel.Location = new System.Drawing.Point(49, 170);
             descricaoLabel.Name = "descricaoLabel";
             descricaoLabel.Size = new System.Drawing.Size(70, 24);
             descricaoLabel.TabIndex = 5;
             descricaoLabel.Text = "Nome:";
+            descricaoLabel.Click += new System.EventHandler(this.descricaoLabel_Click);
             // 
             // LBCadRespons
             // 
@@ -109,130 +95,6 @@
             this.tableAdapterManager.TarefaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Gerenciador_de_Tarefas_1.tarefasDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // responsavelBindingNavigator
-            // 
-            this.responsavelBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.responsavelBindingNavigator.BindingSource = this.responsavelBindingSource;
-            this.responsavelBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.responsavelBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.responsavelBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.responsavelBindingNavigatorSaveItem});
-            this.responsavelBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.responsavelBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.responsavelBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.responsavelBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.responsavelBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.responsavelBindingNavigator.Name = "responsavelBindingNavigator";
-            this.responsavelBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.responsavelBindingNavigator.Size = new System.Drawing.Size(800, 25);
-            this.responsavelBindingNavigator.TabIndex = 7;
-            this.responsavelBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de itens";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Excluir";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primeiro";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posição";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posição atual";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Mover próximo";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // responsavelBindingNavigatorSaveItem
-            // 
-            this.responsavelBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.responsavelBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("responsavelBindingNavigatorSaveItem.Image")));
-            this.responsavelBindingNavigatorSaveItem.Name = "responsavelBindingNavigatorSaveItem";
-            this.responsavelBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.responsavelBindingNavigatorSaveItem.Text = "Salvar Dados";
-            this.responsavelBindingNavigatorSaveItem.Click += new System.EventHandler(this.responsavelBindingNavigatorSaveItem_Click_1);
-            // 
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.responsavelBindingSource, "Nome", true));
@@ -247,16 +109,16 @@
             this.responsavelDataGridView.AllowUserToAddRows = false;
             this.responsavelDataGridView.AllowUserToDeleteRows = false;
             this.responsavelDataGridView.AutoGenerateColumns = false;
-            this.responsavelDataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.responsavelDataGridView.BackgroundColor = System.Drawing.Color.LightGreen;
             this.responsavelDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.responsavelDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.responsavelDataGridView.DataSource = this.responsavelBindingSource;
-            this.responsavelDataGridView.Location = new System.Drawing.Point(614, 28);
+            this.responsavelDataGridView.Location = new System.Drawing.Point(614, -1);
             this.responsavelDataGridView.Name = "responsavelDataGridView";
             this.responsavelDataGridView.ReadOnly = true;
-            this.responsavelDataGridView.Size = new System.Drawing.Size(186, 425);
+            this.responsavelDataGridView.Size = new System.Drawing.Size(186, 454);
             this.responsavelDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -277,7 +139,7 @@
             // BTNovoResp
             // 
             this.BTNovoResp.Image = ((System.Drawing.Image)(resources.GetObject("BTNovoResp.Image")));
-            this.BTNovoResp.Location = new System.Drawing.Point(409, 28);
+            this.BTNovoResp.Location = new System.Drawing.Point(511, -1);
             this.BTNovoResp.Name = "BTNovoResp";
             this.BTNovoResp.Size = new System.Drawing.Size(48, 50);
             this.BTNovoResp.TabIndex = 13;
@@ -287,7 +149,7 @@
             // BTAdicionar
             // 
             this.BTAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("BTAdicionar.Image")));
-            this.BTAdicionar.Location = new System.Drawing.Point(463, 28);
+            this.BTAdicionar.Location = new System.Drawing.Point(565, -1);
             this.BTAdicionar.Name = "BTAdicionar";
             this.BTAdicionar.Size = new System.Drawing.Size(43, 50);
             this.BTAdicionar.TabIndex = 14;
@@ -300,12 +162,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 353);
+            this.ClientSize = new System.Drawing.Size(758, 353);
             this.Controls.Add(this.BTAdicionar);
             this.Controls.Add(this.BTNovoResp);
             this.Controls.Add(this.responsavelDataGridView);
             this.Controls.Add(this.nomeTextBox);
-            this.Controls.Add(this.responsavelBindingNavigator);
             this.Controls.Add(this.LBCadRespons);
             this.Controls.Add(descricaoLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -317,9 +178,6 @@
             this.Load += new System.EventHandler(this.FCadRespons_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingNavigator)).EndInit();
-            this.responsavelBindingNavigator.ResumeLayout(false);
-            this.responsavelBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -332,19 +190,6 @@
         private System.Windows.Forms.BindingSource responsavelBindingSource;
         private tarefasDataSet1TableAdapters.responsavelTableAdapter responsavelTableAdapter;
         private tarefasDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator responsavelBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton responsavelBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox nomeTextBox;
         private System.Windows.Forms.DataGridView responsavelDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;

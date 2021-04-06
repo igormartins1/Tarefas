@@ -108,7 +108,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(806, 296);
+            this.ClientSize = new System.Drawing.Size(806, 295);
             this.Controls.Add(this.BTEntrar);
             this.Controls.Add(this.LBtexto2);
             this.Controls.Add(this.LBBemVindo);

@@ -55,6 +55,10 @@ namespace Gerenciador_de_Tarefas_1
 
         private void FGridConsulta_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'tarefasDataSet1.SelectQueryDados'. Você pode movê-la ou removê-la conforme necessário.
+            this.selectQueryDadosTableAdapter.Fill(this.tarefasDataSet1.SelectQueryDados);
+            // TODO: esta linha de código carrega dados na tabela 'tarefasDataSet1.Tarefa'. Você pode movê-la ou removê-la conforme necessário.
+            this.tarefaTableAdapter.Fill(this.tarefasDataSet1.Tarefa);
             // TODO: esta linha de código carrega dados na tabela 'tarefasDataSet1.Tarefa'. Você pode movê-la ou removê-la conforme necessário.
             this.tarefaTableAdapter.Fill(this.tarefasDataSet1.Tarefa);
            
@@ -134,6 +138,11 @@ namespace Gerenciador_de_Tarefas_1
         {
             FSobre sobre = new FSobre();
             sobre.ShowDialog();
+        }
+
+        private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -66,5 +66,10 @@ namespace Gerenciador_de_Tarefas_1
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
         }
+
+        private void descricaoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
