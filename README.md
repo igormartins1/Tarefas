@@ -23,7 +23,7 @@ Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Ca
 Este trata-se de um gerenciador de tarefas com quatro tópico (Fazer, Fazendo, Feito/Concluído), para tanto o sistema deverá cadastrar tarefas simples, que será informado a tarefa e no status dela quem irá realizar a tarefa. Na tela principal do software deverá ser listado toda as tarefas. Deverá funcionar o sistema com um CRUD (creater, Reader, Update, Delete) deverá realizar as seguintes tarefas de criar/exibir as tarefas, além de adicionar novas tarefas e deletar/arquivar tarefas, nome de usuário.
 - </p>
 
-	 *  ___Requisitos não  Funcionais__
+	 *    __Requisitos  Não Funcionais__
 	
 	 <p align= "justify">
 Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcionalidade offline. Com relação ao CRUD não deverá apagar o usuário e nem o status.
