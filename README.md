@@ -1,6 +1,6 @@
 
 
-Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Cataguases com objetivo de construir um Sistema de Gereciamento de Tarefas na Aula de Desenvolvimento para Aplicativo Desktop.
+Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Cataguases com objetivo de construir um Sistema de Gereciamento de Tarefas na Aula de Desenvolvimento para Aplicativo Desktop @brunorossi
 
 ## Requisitos do Projeto 📅
 
