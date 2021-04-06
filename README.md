@@ -11,7 +11,7 @@ Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Ca
  
 
  
-- [2]__#Requisitos do usuário__
+- [2]__#######Requisitos do usuário__
 
 - <p align= "justify">
 - Em uma visão Macro está terá três tópicos para cada atividade (Fazer, Fazendo, Feito) fazer trata-se da atividade que o usuário ainda irá desenvolver para os próximos dias poderá ter mais de uma atividade, já fazendo é a atividade que está desenvolvendo no exato momento e também poderá ter mais de uma tarefa, o feito é as atividades já finalizadas, ou seja, concluídas. Enquanto o aguardando é a atividade que está pendente, ou seja, que precisa de algo para ser finalizada.
