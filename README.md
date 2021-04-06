@@ -30,7 +30,7 @@ Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcio
 - </p>
 
 
-![Capa](https://drive.google.com/file/d/1QsTV7D05fqWg7Y2mUCSi3sjR7IK5ozug/view?usp=sharing)
+![Capa](https://drive.google.com/uc?id=1QsTV7D05fqWg7Y2mUCSi3sjR7IK5ozug)
 
 
 ## Tecnologias usadas 🛠
