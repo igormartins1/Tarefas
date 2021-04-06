@@ -4,7 +4,7 @@ Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Ca
 
 ## Requisitos do Projeto 📅
  
- * __Requisitos do Negocio__
+ *  __Requisitos do Negocio__
 
  Este consiste em controlar melhor a rotina e não atrasar as atividades, ver as atividades já realizadas, afim de possibilitar o maior controle do seu tempo e dia.
 
