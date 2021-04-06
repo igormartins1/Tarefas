@@ -3,8 +3,8 @@
 Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Cataguases com objetivo de construir um Sistema de Gereciamento de Tarefas na Aula de Desenvolvimento para Aplicativo Desktop.
 
 ## Requisitos do Projeto 📅
-
- [1] __Requisitos do Negocio__
+ 
+ * Requisitos do Negocio
 
 - [1.1] Este consiste em controlar melhor a rotina e não atrasar as atividades, ver as atividades já realizadas, afim de possibilitar o maior controle do seu tempo e dia.
 -
