@@ -28,7 +28,7 @@ Este trata-se de um gerenciador de tarefas com quatro tópico (Fazer, Fazendo, F
 	      Requisitos Não Funcionais
 	
 	 -<p align= "justify">
-Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcionalidade offline. Com relação ao CRUD não deverá apagar o usuário e nem o status.
+Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcionalidade offline. Com relação ao CRUD não deverá apagar o usuário e nem o status,pois trata-se de uma Chave Estrangeira.
 - </p>
 
 
