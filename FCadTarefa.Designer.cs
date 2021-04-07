@@ -60,7 +60,8 @@
             LBNomeTarefa.AutoSize = true;
             LBNomeTarefa.BackColor = System.Drawing.Color.Transparent;
             LBNomeTarefa.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LBNomeTarefa.Location = new System.Drawing.Point(184, 110);
+            LBNomeTarefa.ForeColor = System.Drawing.SystemColors.Desktop;
+            LBNomeTarefa.Location = new System.Drawing.Point(160, 100);
             LBNomeTarefa.Name = "LBNomeTarefa";
             LBNomeTarefa.Size = new System.Drawing.Size(73, 23);
             LBNomeTarefa.TabIndex = 9;
@@ -71,7 +72,8 @@
             label1.AutoSize = true;
             label1.BackColor = System.Drawing.Color.Transparent;
             label1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.Location = new System.Drawing.Point(58, 199);
+            label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            label1.Location = new System.Drawing.Point(71, 199);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(63, 23);
             label1.TabIndex = 10;
@@ -82,7 +84,8 @@
             label2.AutoSize = true;
             label2.BackColor = System.Drawing.Color.Transparent;
             label2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label2.Location = new System.Drawing.Point(341, 199);
+            label2.ForeColor = System.Drawing.SystemColors.Desktop;
+            label2.Location = new System.Drawing.Point(428, 199);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(115, 23);
             label2.TabIndex = 11;
@@ -113,10 +116,11 @@
             // descricaoTextBox
             // 
             this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tarefaBindingSource, "descricao", true));
-            this.descricaoTextBox.Location = new System.Drawing.Point(253, 110);
+            this.descricaoTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descricaoTextBox.Location = new System.Drawing.Point(253, 100);
             this.descricaoTextBox.Multiline = true;
             this.descricaoTextBox.Name = "descricaoTextBox";
-            this.descricaoTextBox.Size = new System.Drawing.Size(290, 28);
+            this.descricaoTextBox.Size = new System.Drawing.Size(352, 30);
             this.descricaoTextBox.TabIndex = 2;
             // 
             // fKStatusListBox
@@ -125,9 +129,9 @@
             this.fKStatusListBox.DataSource = this.statusBindingSource;
             this.fKStatusListBox.DisplayMember = "Descricao";
             this.fKStatusListBox.FormattingEnabled = true;
-            this.fKStatusListBox.Location = new System.Drawing.Point(152, 166);
+            this.fKStatusListBox.Location = new System.Drawing.Point(155, 166);
             this.fKStatusListBox.Name = "fKStatusListBox";
-            this.fKStatusListBox.Size = new System.Drawing.Size(160, 82);
+            this.fKStatusListBox.Size = new System.Drawing.Size(160, 108);
             this.fKStatusListBox.TabIndex = 3;
             this.fKStatusListBox.ValueMember = "IdStatus";
             // 
@@ -142,9 +146,9 @@
             this.fKResponsavelListBox.DataSource = this.responsavelBindingSource;
             this.fKResponsavelListBox.DisplayMember = "Nome";
             this.fKResponsavelListBox.FormattingEnabled = true;
-            this.fKResponsavelListBox.Location = new System.Drawing.Point(473, 166);
+            this.fKResponsavelListBox.Location = new System.Drawing.Point(554, 166);
             this.fKResponsavelListBox.Name = "fKResponsavelListBox";
-            this.fKResponsavelListBox.Size = new System.Drawing.Size(178, 82);
+            this.fKResponsavelListBox.Size = new System.Drawing.Size(167, 108);
             this.fKResponsavelListBox.TabIndex = 4;
             this.fKResponsavelListBox.ValueMember = "IdResponsavel";
             // 

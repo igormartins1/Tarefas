@@ -67,7 +67,7 @@
             this.LTituloStatus.AutoSize = true;
             this.LTituloStatus.BackColor = System.Drawing.Color.Transparent;
             this.LTituloStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LTituloStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.LTituloStatus.ForeColor = System.Drawing.Color.ForestGreen;
             this.LTituloStatus.Location = new System.Drawing.Point(140, 82);
             this.LTituloStatus.Name = "LTituloStatus";
             this.LTituloStatus.Size = new System.Drawing.Size(302, 33);
@@ -101,6 +101,7 @@
             // descricaoTextBox
             // 
             this.descricaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.statusBindingSource, "Descricao", true));
+            this.descricaoTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descricaoTextBox.Location = new System.Drawing.Point(160, 155);
             this.descricaoTextBox.Multiline = true;
             this.descricaoTextBox.Name = "descricaoTextBox";

@@ -144,5 +144,23 @@ namespace Gerenciador_de_Tarefas_1
         {
 
         }
+
+        private void BTDelete_Click_1(object sender, EventArgs e)
+        {
+            this.tarefaBindingSource.RemoveCurrent();
+            this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.tarefaBindingSource.RemoveCurrent();
+            this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
+        }
+
+        private void deletarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FDeletarCadastro fDeletar = new FDeletarCadastro();
+            fDeletar.ShowDialog();
+        }
     }
 }

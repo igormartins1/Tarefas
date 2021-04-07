@@ -32,10 +32,10 @@
             this.LBBemVindo = new System.Windows.Forms.Label();
             this.LBtexto2 = new System.Windows.Forms.Label();
             this.BTEntrar = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MENAbertura = new System.Windows.Forms.MenuStrip();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historiaDoAplicativoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.MENAbertura.SuspendLayout();
             this.SuspendLayout();
             // 
             // LBBemVindo
@@ -77,28 +77,29 @@
             this.BTEntrar.UseVisualStyleBackColor = false;
             this.BTEntrar.Click += new System.EventHandler(this.BTEntrar_Click);
             // 
-            // menuStrip1
+            // MENAbertura
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MENAbertura.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.MENAbertura.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(806, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "MenuPrincipal";
+            this.MENAbertura.Location = new System.Drawing.Point(0, 0);
+            this.MENAbertura.Name = "MENAbertura";
+            this.MENAbertura.Size = new System.Drawing.Size(806, 24);
+            this.MENAbertura.TabIndex = 3;
+            this.MENAbertura.Text = "MenuPrincipal";
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.historiaDoAplicativoToolStripMenuItem});
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.sobreToolStripMenuItem.Text = "Sobre";
             // 
             // historiaDoAplicativoToolStripMenuItem
             // 
             this.historiaDoAplicativoToolStripMenuItem.Name = "historiaDoAplicativoToolStripMenuItem";
-            this.historiaDoAplicativoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.historiaDoAplicativoToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.historiaDoAplicativoToolStripMenuItem.Text = "Historia do Aplicativo";
             this.historiaDoAplicativoToolStripMenuItem.Click += new System.EventHandler(this.historiaDoAplicativoToolStripMenuItem_Click_1);
             // 
@@ -112,15 +113,16 @@
             this.Controls.Add(this.BTEntrar);
             this.Controls.Add(this.LBtexto2);
             this.Controls.Add(this.LBBemVindo);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MENAbertura);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FMenuAbertura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Abertura";
             this.Load += new System.EventHandler(this.FMenuAbertura_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MENAbertura.ResumeLayout(false);
+            this.MENAbertura.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,7 +133,7 @@
         private System.Windows.Forms.Label LBBemVindo;
         private System.Windows.Forms.Label LBtexto2;
         private System.Windows.Forms.Button BTEntrar;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MENAbertura;
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historiaDoAplicativoToolStripMenuItem;
     }

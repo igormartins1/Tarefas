@@ -80,7 +80,7 @@
             this.responsavelDataGridView.Location = new System.Drawing.Point(0, 0);
             this.responsavelDataGridView.Name = "responsavelDataGridView";
             this.responsavelDataGridView.ReadOnly = true;
-            this.responsavelDataGridView.Size = new System.Drawing.Size(144, 450);
+            this.responsavelDataGridView.Size = new System.Drawing.Size(185, 450);
             this.responsavelDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -103,13 +103,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(144, 450);
+            this.ClientSize = new System.Drawing.Size(185, 450);
             this.Controls.Add(this.responsavelDataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FGridConsultaResp";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar Responsável";
             this.Load += new System.EventHandler(this.FGridConsultaResp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).EndInit();

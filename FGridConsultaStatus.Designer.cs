@@ -121,7 +121,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FGridConsultaStatus";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Status";
             this.Load += new System.EventHandler(this.FGridConsultaStatus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).EndInit();

@@ -58,6 +58,12 @@
     <Compile Include="FCadTarefa.Designer.cs">
       <DependentUpon>FCadTarefa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FDeletarCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDeletarCadastro.Designer.cs">
+      <DependentUpon>FDeletarCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGridConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FCadTarefa.resx">
       <DependentUpon>FCadTarefa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDeletarCadastro.resx">
+      <DependentUpon>FDeletarCadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FGridConsulta.resx">
       <DependentUpon>FGridConsulta.cs</DependentUpon>

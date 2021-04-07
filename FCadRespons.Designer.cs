@@ -53,7 +53,8 @@
             descricaoLabel.AutoSize = true;
             descricaoLabel.BackColor = System.Drawing.Color.Transparent;
             descricaoLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descricaoLabel.Location = new System.Drawing.Point(49, 170);
+            descricaoLabel.ForeColor = System.Drawing.SystemColors.Desktop;
+            descricaoLabel.Location = new System.Drawing.Point(57, 196);
             descricaoLabel.Name = "descricaoLabel";
             descricaoLabel.Size = new System.Drawing.Size(70, 24);
             descricaoLabel.TabIndex = 5;
@@ -66,8 +67,8 @@
             this.LBCadRespons.AutoSize = true;
             this.LBCadRespons.BackColor = System.Drawing.Color.Transparent;
             this.LBCadRespons.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBCadRespons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.LBCadRespons.Location = new System.Drawing.Point(122, 104);
+            this.LBCadRespons.ForeColor = System.Drawing.Color.ForestGreen;
+            this.LBCadRespons.Location = new System.Drawing.Point(142, 120);
             this.LBCadRespons.Name = "LBCadRespons";
             this.LBCadRespons.Size = new System.Drawing.Size(402, 33);
             this.LBCadRespons.TabIndex = 6;
@@ -98,10 +99,11 @@
             // nomeTextBox
             // 
             this.nomeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.responsavelBindingSource, "Nome", true));
-            this.nomeTextBox.Location = new System.Drawing.Point(148, 175);
+            this.nomeTextBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeTextBox.Location = new System.Drawing.Point(173, 202);
             this.nomeTextBox.Multiline = true;
             this.nomeTextBox.Name = "nomeTextBox";
-            this.nomeTextBox.Size = new System.Drawing.Size(350, 20);
+            this.nomeTextBox.Size = new System.Drawing.Size(408, 22);
             this.nomeTextBox.TabIndex = 8;
             // 
             // responsavelDataGridView
@@ -115,10 +117,10 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.responsavelDataGridView.DataSource = this.responsavelBindingSource;
-            this.responsavelDataGridView.Location = new System.Drawing.Point(614, -1);
+            this.responsavelDataGridView.Location = new System.Drawing.Point(716, -1);
             this.responsavelDataGridView.Name = "responsavelDataGridView";
             this.responsavelDataGridView.ReadOnly = true;
-            this.responsavelDataGridView.Size = new System.Drawing.Size(186, 454);
+            this.responsavelDataGridView.Size = new System.Drawing.Size(217, 524);
             this.responsavelDataGridView.TabIndex = 9;
             // 
             // dataGridViewTextBoxColumn1
@@ -139,9 +141,9 @@
             // BTNovoResp
             // 
             this.BTNovoResp.Image = ((System.Drawing.Image)(resources.GetObject("BTNovoResp.Image")));
-            this.BTNovoResp.Location = new System.Drawing.Point(511, -1);
+            this.BTNovoResp.Location = new System.Drawing.Point(596, -1);
             this.BTNovoResp.Name = "BTNovoResp";
-            this.BTNovoResp.Size = new System.Drawing.Size(48, 50);
+            this.BTNovoResp.Size = new System.Drawing.Size(56, 58);
             this.BTNovoResp.TabIndex = 13;
             this.BTNovoResp.UseVisualStyleBackColor = true;
             this.BTNovoResp.Click += new System.EventHandler(this.button1_Click);
@@ -149,30 +151,34 @@
             // BTAdicionar
             // 
             this.BTAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("BTAdicionar.Image")));
-            this.BTAdicionar.Location = new System.Drawing.Point(565, -1);
+            this.BTAdicionar.Location = new System.Drawing.Point(659, -1);
             this.BTAdicionar.Name = "BTAdicionar";
-            this.BTAdicionar.Size = new System.Drawing.Size(43, 50);
+            this.BTAdicionar.Size = new System.Drawing.Size(50, 58);
             this.BTAdicionar.TabIndex = 14;
             this.BTAdicionar.UseVisualStyleBackColor = true;
             this.BTAdicionar.Click += new System.EventHandler(this.BTAdicionar_Click);
             // 
             // FCadRespons
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(758, 353);
+            this.ClientSize = new System.Drawing.Size(884, 407);
             this.Controls.Add(this.BTAdicionar);
             this.Controls.Add(this.BTNovoResp);
             this.Controls.Add(this.responsavelDataGridView);
             this.Controls.Add(this.nomeTextBox);
             this.Controls.Add(this.LBCadRespons);
             this.Controls.Add(descricaoLabel);
+            this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.DarkGreen;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FCadRespons";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " Cadastrar Responsável";
             this.Load += new System.EventHandler(this.FCadRespons_Load);

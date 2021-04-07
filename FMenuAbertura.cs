@@ -25,8 +25,10 @@ namespace Gerenciador_de_Tarefas_1
         private void BTEntrar_Click(object sender, EventArgs e)
         {
             FGridConsulta fGrid = new FGridConsulta();
+            this.Visible = false;
             fGrid.ShowDialog();
-            this.Visible=false;
+            this.Visible = true;
+           
         }
 
         private void LBBemVindo_Click(object sender, EventArgs e)
