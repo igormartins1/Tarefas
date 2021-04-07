@@ -1,12 +1,14 @@
 
-
-Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Cataguases com objetivo de construir um Sistema de Gereciamento de Tarefas na Aula de Desenvolvimento para Aplicativo Desktop.:eyes::+1:
+<p align= "justify">
+Projeto  Desenvolvido  no Curso Técnico de Informática do Instituto Federal Cataguases com objetivo de construir um Sistema de Gereciamento de Tarefas na Aula de Desenvolvimento para Aplicativo Desktop.:eyes::+1:</p>
 
 ## Requisitos do Projeto 📅
  
  *  __Requisitos do Negocio__
 
- Este consiste em controlar melhor a rotina e não atrasar as atividades, ver as atividades já realizadas, afim de possibilitar o maior controle do seu tempo e dia.
+
+<p align= "justify">
+ Este consiste em controlar melhor a rotina e não atrasar as atividades, ver as atividades já realizadas, afim de possibilitar o maior controle do seu tempo e dia.</p>
 
 
  * __Requisitos do usuário__
@@ -32,7 +34,7 @@ Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcio
 - </p>
 
 
-![Capa](https://drive.google.com/uc?id=1QsTV7D05fqWg7Y2mUCSi3sjR7IK5ozug)
+![](https://drive.google.com/uc?id=1QsTV7D05fqWg7Y2mUCSi3sjR7IK5ozug)
 
 
 ## Tecnologias usadas 🛠
