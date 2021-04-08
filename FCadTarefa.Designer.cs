@@ -205,7 +205,7 @@
             this.MinimizeBox = false;
             this.Name = "FCadTarefa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastrar Tarefa";
+            this.Text = "..:::Cadastrar Tarefa:::..";
             this.Load += new System.EventHandler(this.FCadTarefa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarefaBindingSource)).EndInit();

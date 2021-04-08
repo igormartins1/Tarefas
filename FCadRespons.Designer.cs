@@ -180,7 +180,7 @@
             this.Name = "FCadRespons";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Cadastrar Responsável";
+            this.Text = ".. :::Cadastrar Responsável:::...";
             this.Load += new System.EventHandler(this.FCadRespons_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingSource)).EndInit();

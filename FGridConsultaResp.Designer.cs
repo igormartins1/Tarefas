@@ -109,7 +109,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FGridConsultaResp";
-            this.Text = "Consultar Responsável";
+            this.Text = "...::Consultar Responsável..:::";
             this.Load += new System.EventHandler(this.FGridConsultaResp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.responsavelBindingSource)).EndInit();

@@ -162,5 +162,56 @@ namespace Gerenciador_de_Tarefas_1
             FDeletarCadastro fDeletar = new FDeletarCadastro();
             fDeletar.ShowDialog();
         }
+
+        private void atualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.tarefaTableAdapter.Fill(this.tarefasDataSet1.Tarefa);
+            this.tarefaBindingSource.AddNew();
+
+        }
+
+        private void atualizarToolStripMenuItem_Click_1(object sender, EventArgs e)
+
+        {
+
+            this.Validate();
+
+            this.selectQueryDadosBindingSource.EndEdit();
+
+            this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
+
+            this.tarefaTableAdapter.Fill(this.tarefasDataSet1.Tarefa);
+
+            this.selectQueryDadosTableAdapter.Fill(this.tarefasDataSet1.SelectQueryDados);
+
+            
+
+           
+        }
+
+        private void selectQueryDadosDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tarefaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void responsavelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statusToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

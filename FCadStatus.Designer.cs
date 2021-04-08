@@ -179,7 +179,7 @@
             this.MinimizeBox = false;
             this.Name = "FCadStatus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " Cadastrar Status";
+            this.Text = " ...::Cadastrar Status::..";
             this.Load += new System.EventHandler(this.FCadStatus_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarefasDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).EndInit();

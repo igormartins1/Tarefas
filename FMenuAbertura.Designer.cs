@@ -119,7 +119,7 @@
             this.MinimizeBox = false;
             this.Name = "FMenuAbertura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Abertura";
+            this.Text = "..::::Abertura::...";
             this.Load += new System.EventHandler(this.FMenuAbertura_Load);
             this.MENAbertura.ResumeLayout(false);
             this.MENAbertura.PerformLayout();

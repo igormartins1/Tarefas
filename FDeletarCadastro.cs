@@ -33,10 +33,16 @@ namespace Gerenciador_de_Tarefas_1
         }
 
         private void BTDeletar_Click(object sender, EventArgs e)
+
+
         {
+            MessageBox.Show(this, "Tem Certeza que Deseja Excluir a Tarefa", " Excluir Tarefas", MessageBoxButtons.OK);
+
+
             this.tarefaBindingSource.RemoveCurrent();
             this.tableAdapterManager.UpdateAll(this.tarefasDataSet1);
 
+            
         }
     }
 }
