@@ -36,6 +36,8 @@ Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcio
 
 ![](https://drive.google.com/uc?id=1QsTV7D05fqWg7Y2mUCSi3sjR7IK5ozug)
 
+![Video do Aplicativo](https://youtu.be/cZ7gS3AvMsw)
+
 
 ## Tecnologias usadas 🛠
 - Back-end
