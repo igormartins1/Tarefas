@@ -38,7 +38,7 @@ Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcio
 
 [Video do Aplicativo](https://www.youtube.com/watch?v=cZ7gS3AvMsw):eyes:
 
-![Link do Banco de Dados](https://drive.google.com/drive/folders/16_pXNFk0JucdGAcpCZ0L_PtkHdzwVIqK?usp=sharing)
+[Link do Banco de Dados](https://drive.google.com/drive/folders/16_pXNFk0JucdGAcpCZ0L_PtkHdzwVIqK?usp=sharing)
 
 
 ## Tecnologias usadas 🛠
