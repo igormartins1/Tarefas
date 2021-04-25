@@ -40,6 +40,8 @@ Este é um gerenciador de tarefas, que funciona sem acesso a internet com funcio
 
 [Link do Banco de Dados](https://drive.google.com/drive/folders/16_pXNFk0JucdGAcpCZ0L_PtkHdzwVIqK?usp=sharing)
 
+[Link do Projeto Completo](https://drive.google.com/drive/folders/16_pXNFk0JucdGAcpCZ0L_PtkHdzwVIqK?usp=sharing)
+
 
 ## Tecnologias usadas 🛠
 - Back-end
